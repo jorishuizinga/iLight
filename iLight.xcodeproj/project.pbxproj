@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8802311E058FCF005E8C13 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8802301E058FCF005E8C13 /* HomeKit.framework */; };
+		CDE00CE01DFC3B4800CE54E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE00CDF1DFC3B4800CE54E2 /* AppDelegate.swift */; };
+		CDE00CE21DFC3B4800CE54E2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE00CE11DFC3B4800CE54E2 /* FirstViewController.swift */; };
+		CDE00CE41DFC3B4800CE54E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE00CE31DFC3B4800CE54E2 /* SecondViewController.swift */; };
+		CDE00CE71DFC3B4800CE54E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE00CE51DFC3B4800CE54E2 /* Main.storyboard */; };
+		CDE00CE91DFC3B4800CE54E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE00CE81DFC3B4800CE54E2 /* Assets.xcassets */; };
+		CDE00CEC1DFC3B4800CE54E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE00CEA1DFC3B4800CE54E2 /* LaunchScreen.storyboard */; };
+		CDE00CF71DFC3B4800CE54E2 /* iLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE00CF61DFC3B4800CE54E2 /* iLightTests.swift */; };
+		CDE00D021DFC3B4800CE54E2 /* iLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE00D011DFC3B4800CE54E2 /* iLightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE00CF31DFC3B4800CE54E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE00CD41DFC3B4700CE54E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE00CDB1DFC3B4800CE54E2;
+			remoteInfo = iLight;
+		};
+		CDE00CFE1DFC3B4800CE54E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE00CD41DFC3B4700CE54E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE00CDB1DFC3B4800CE54E2;
+			remoteInfo = iLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD88022E1E058FCE005E8C13 /* iLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iLight.entitlements; sourceTree = "<group>"; };
+		CD8802301E058FCF005E8C13 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		CDE00CDC1DFC3B4800CE54E2 /* iLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE00CDF1DFC3B4800CE54E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDE00CE11DFC3B4800CE54E2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CDE00CE31DFC3B4800CE54E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CDE00CE61DFC3B4800CE54E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE00CE81DFC3B4800CE54E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDE00CEB1DFC3B4800CE54E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDE00CED1DFC3B4800CE54E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE00CF21DFC3B4800CE54E2 /* iLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE00CF61DFC3B4800CE54E2 /* iLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLightTests.swift; sourceTree = "<group>"; };
+		CDE00CF81DFC3B4800CE54E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE00CFD1DFC3B4800CE54E2 /* iLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE00D011DFC3B4800CE54E2 /* iLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLightUITests.swift; sourceTree = "<group>"; };
+		CDE00D031DFC3B4800CE54E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE00CD91DFC3B4800CE54E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8802311E058FCF005E8C13 /* HomeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CEF1DFC3B4800CE54E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CFA1DFC3B4800CE54E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD88022F1E058FCF005E8C13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8802301E058FCF005E8C13 /* HomeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE00CD31DFC3B4700CE54E2 = {
+			isa = PBXGroup;
+			children = (
+				CDE00CDE1DFC3B4800CE54E2 /* iLight */,
+				CDE00CF51DFC3B4800CE54E2 /* iLightTests */,
+				CDE00D001DFC3B4800CE54E2 /* iLightUITests */,
+				CDE00CDD1DFC3B4800CE54E2 /* Products */,
+				CD88022F1E058FCF005E8C13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE00CDD1DFC3B4800CE54E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE00CDC1DFC3B4800CE54E2 /* iLight.app */,
+				CDE00CF21DFC3B4800CE54E2 /* iLightTests.xctest */,
+				CDE00CFD1DFC3B4800CE54E2 /* iLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE00CDE1DFC3B4800CE54E2 /* iLight */ = {
+			isa = PBXGroup;
+			children = (
+				CD88022E1E058FCE005E8C13 /* iLight.entitlements */,
+				CDE00CDF1DFC3B4800CE54E2 /* AppDelegate.swift */,
+				CDE00CE11DFC3B4800CE54E2 /* FirstViewController.swift */,
+				CDE00CE31DFC3B4800CE54E2 /* SecondViewController.swift */,
+				CDE00CE51DFC3B4800CE54E2 /* Main.storyboard */,
+				CDE00CE81DFC3B4800CE54E2 /* Assets.xcassets */,
+				CDE00CEA1DFC3B4800CE54E2 /* LaunchScreen.storyboard */,
+				CDE00CED1DFC3B4800CE54E2 /* Info.plist */,
+			);
+			path = iLight;
+			sourceTree = "<group>";
+		};
+		CDE00CF51DFC3B4800CE54E2 /* iLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE00CF61DFC3B4800CE54E2 /* iLightTests.swift */,
+				CDE00CF81DFC3B4800CE54E2 /* Info.plist */,
+			);
+			path = iLightTests;
+			sourceTree = "<group>";
+		};
+		CDE00D001DFC3B4800CE54E2 /* iLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE00D011DFC3B4800CE54E2 /* iLightUITests.swift */,
+				CDE00D031DFC3B4800CE54E2 /* Info.plist */,
+			);
+			path = iLightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE00CDB1DFC3B4800CE54E2 /* iLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE00D061DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLight" */;
+			buildPhases = (
+				CDE00CD81DFC3B4800CE54E2 /* Sources */,
+				CDE00CD91DFC3B4800CE54E2 /* Frameworks */,
+				CDE00CDA1DFC3B4800CE54E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLight;
+			productName = iLight;
+			productReference = CDE00CDC1DFC3B4800CE54E2 /* iLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE00CF11DFC3B4800CE54E2 /* iLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE00D091DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLightTests" */;
+			buildPhases = (
+				CDE00CEE1DFC3B4800CE54E2 /* Sources */,
+				CDE00CEF1DFC3B4800CE54E2 /* Frameworks */,
+				CDE00CF01DFC3B4800CE54E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE00CF41DFC3B4800CE54E2 /* PBXTargetDependency */,
+			);
+			name = iLightTests;
+			productName = iLightTests;
+			productReference = CDE00CF21DFC3B4800CE54E2 /* iLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDE00CFC1DFC3B4800CE54E2 /* iLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE00D0C1DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLightUITests" */;
+			buildPhases = (
+				CDE00CF91DFC3B4800CE54E2 /* Sources */,
+				CDE00CFA1DFC3B4800CE54E2 /* Frameworks */,
+				CDE00CFB1DFC3B4800CE54E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE00CFF1DFC3B4800CE54E2 /* PBXTargetDependency */,
+			);
+			name = iLightUITests;
+			productName = iLightUITests;
+			productReference = CDE00CFD1DFC3B4800CE54E2 /* iLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE00CD41DFC3B4700CE54E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Joris Huizinga";
+				TargetAttributes = {
+					CDE00CDB1DFC3B4800CE54E2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RHWYX44Q2A;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
+					};
+					CDE00CF11DFC3B4800CE54E2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RHWYX44Q2A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDE00CDB1DFC3B4800CE54E2;
+					};
+					CDE00CFC1DFC3B4800CE54E2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RHWYX44Q2A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDE00CDB1DFC3B4800CE54E2;
+					};
+				};
+			};
+			buildConfigurationList = CDE00CD71DFC3B4700CE54E2 /* Build configuration list for PBXProject "iLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE00CD31DFC3B4700CE54E2;
+			productRefGroup = CDE00CDD1DFC3B4800CE54E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE00CDB1DFC3B4800CE54E2 /* iLight */,
+				CDE00CF11DFC3B4800CE54E2 /* iLightTests */,
+				CDE00CFC1DFC3B4800CE54E2 /* iLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE00CDA1DFC3B4800CE54E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE00CEC1DFC3B4800CE54E2 /* LaunchScreen.storyboard in Resources */,
+				CDE00CE91DFC3B4800CE54E2 /* Assets.xcassets in Resources */,
+				CDE00CE71DFC3B4800CE54E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CF01DFC3B4800CE54E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CFB1DFC3B4800CE54E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE00CD81DFC3B4800CE54E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE00CE41DFC3B4800CE54E2 /* SecondViewController.swift in Sources */,
+				CDE00CE01DFC3B4800CE54E2 /* AppDelegate.swift in Sources */,
+				CDE00CE21DFC3B4800CE54E2 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CEE1DFC3B4800CE54E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE00CF71DFC3B4800CE54E2 /* iLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE00CF91DFC3B4800CE54E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE00D021DFC3B4800CE54E2 /* iLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE00CF41DFC3B4800CE54E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE00CDB1DFC3B4800CE54E2 /* iLight */;
+			targetProxy = CDE00CF31DFC3B4800CE54E2 /* PBXContainerItemProxy */;
+		};
+		CDE00CFF1DFC3B4800CE54E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE00CDB1DFC3B4800CE54E2 /* iLight */;
+			targetProxy = CDE00CFE1DFC3B4800CE54E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDE00CE51DFC3B4800CE54E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE00CE61DFC3B4800CE54E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDE00CEA1DFC3B4800CE54E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE00CEB1DFC3B4800CE54E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE00D041DFC3B4800CE54E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDE00D051DFC3B4800CE54E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE00D071DFC3B4800CE54E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLight/iLight.entitlements;
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CDE00D081DFC3B4800CE54E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLight/iLight.entitlements;
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CDE00D0A1DFC3B4800CE54E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLight.app/iLight";
+			};
+			name = Debug;
+		};
+		CDE00D0B1DFC3B4800CE54E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLight.app/iLight";
+			};
+			name = Release;
+		};
+		CDE00D0D1DFC3B4800CE54E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = iLight;
+			};
+			name = Debug;
+		};
+		CDE00D0E1DFC3B4800CE54E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RHWYX44Q2A;
+				INFOPLIST_FILE = iLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joris.iLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = iLight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE00CD71DFC3B4700CE54E2 /* Build configuration list for PBXProject "iLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE00D041DFC3B4800CE54E2 /* Debug */,
+				CDE00D051DFC3B4800CE54E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE00D061DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE00D071DFC3B4800CE54E2 /* Debug */,
+				CDE00D081DFC3B4800CE54E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE00D091DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE00D0A1DFC3B4800CE54E2 /* Debug */,
+				CDE00D0B1DFC3B4800CE54E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE00D0C1DFC3B4800CE54E2 /* Build configuration list for PBXNativeTarget "iLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE00D0D1DFC3B4800CE54E2 /* Debug */,
+				CDE00D0E1DFC3B4800CE54E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE00CD41DFC3B4700CE54E2 /* Project object */;
+}
