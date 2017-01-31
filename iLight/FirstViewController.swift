@@ -28,6 +28,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, HMHomeMa
     var secondLight: HMAccessory!;
     var thirdTestLight: HMAccessory!;
     let beaconRegion: CLBeaconRegion = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"11984894-7042-9801-839A-ADECCDFEDFF0")as! UUID, identifier: "Beaconons");
+    let beacon0x3: CLBeaconRegion = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"11984894-7042-9801-839A-ADECCDFEDFF0")as! UUID, major: 0x1, minor: 0x3, identifier: "Beacononbonbons");
     
     @IBOutlet weak var lampSwitch: UISwitch!
     @IBOutlet weak var configureLampButton: UIButton!
@@ -52,9 +53,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, HMHomeMa
         lampPicker.dataSource = self;
         locationManager.delegate = self;
         locationManager.requestAlwaysAuthorization();
-        locationManager.startMonitoring(for: beaconRegion);
-        locationManager.startRangingBeacons(in: beaconRegion);
-        locationManager.requestState(for: beaconRegion);
+        locationManager.startMonitoring(for: beacon0x3);
+        locationManager.startRangingBeacons(in: beacon0x3);
+        locationManager.requestState(for: beacon0x3);
     }
 
     override func didReceiveMemoryWarning(){
@@ -83,6 +84,14 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, HMHomeMa
         for beacon in didRangeBeacons{
             if(beacon.proximity == CLProximity.immediate){
                 beaconsInProximity.append(beacon);
+            }else if(beacon.proximity == CLProximity.unknown){
+                if(beaconsInProximity.contains(beacon)){
+                    for index in 0...beaconsInProximity.count{
+                        if(beaconsInProximity[index] == beacon){
+                            beaconsInProximity.remove(at: index);
+                        }
+                    }
+                }
             }else{
                 if(beaconsInProximity.contains(beacon)){
                     for index in 0...beaconsInProximity.count{
@@ -110,19 +119,27 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, HMHomeMa
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion){
         let bRegion = region as! CLBeaconRegion;
         if(bRegion.proximityUUID == beaconRegion.proximityUUID){
-            print("Correct region");
-            beaconStatusLabel.text = "Entered beacon region";
+            if(bRegion.major == 0x1){
+                if(bRegion.minor == 0x3){
+                    print("Correct region");
+                    beaconStatusLabel.text = "Entered beacon region";
+                }
+            }
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion){
         let bRegion = region as! CLBeaconRegion;
         if(bRegion.proximityUUID == beaconRegion.proximityUUID){
-            print("Exited correct region");
-            beaconStatusLabel.text = "Beacon region left";
+            if(bRegion.major == 0x1){
+                if(bRegion.minor == 0x3){
+                    print("Exited correct region");
+                    beaconStatusLabel.text = "Beacon region left";
+                }
+            }
         }
     }
     
